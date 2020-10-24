@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E90671EC2544779B00DA97C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90671EB2544779B00DA97C1 /* AppDelegate.swift */; };
-		E90671EE2544779B00DA97C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90671ED2544779B00DA97C1 /* SceneDelegate.swift */; };
 		E90671F02544779B00DA97C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90671EF2544779B00DA97C1 /* ViewController.swift */; };
 		E90671F32544779B00DA97C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90671F12544779B00DA97C1 /* Main.storyboard */; };
 		E90671F62544779B00DA97C1 /* TMDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E90671F42544779B00DA97C1 /* TMDB.xcdatamodeld */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		E90671E82544779B00DA97C1 /* TMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90671EB2544779B00DA97C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E90671ED2544779B00DA97C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E90671EF2544779B00DA97C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E90671F22544779B00DA97C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E90671F52544779B00DA97C1 /* TMDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TMDB.xcdatamodel; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				E90671EB2544779B00DA97C1 /* AppDelegate.swift */,
-				E90671ED2544779B00DA97C1 /* SceneDelegate.swift */,
 				E90671EF2544779B00DA97C1 /* ViewController.swift */,
 				E90671F12544779B00DA97C1 /* Main.storyboard */,
 				E90671F72544779C00DA97C1 /* Assets.xcassets */,
@@ -264,7 +261,6 @@
 				E90671F62544779B00DA97C1 /* TMDB.xcdatamodeld in Sources */,
 				E90671F02544779B00DA97C1 /* ViewController.swift in Sources */,
 				E90671EC2544779B00DA97C1 /* AppDelegate.swift in Sources */,
-				E90671EE2544779B00DA97C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.id.chrizers.TMDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -469,7 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.id.chrizers.TMDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
