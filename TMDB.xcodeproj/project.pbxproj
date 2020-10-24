@@ -17,6 +17,11 @@
 		E906722925447CCD00DA97C1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906722825447CCD00DA97C1 /* Coordinator.swift */; };
 		E906723125447CE600DA97C1 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906723025447CE600DA97C1 /* BaseCoordinator.swift */; };
 		E906723B25447D2400DA97C1 /* CoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906723A25447D2400DA97C1 /* CoordinatorTest.swift */; };
+		E906724125449D5200DA97C1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906724025449D5200DA97C1 /* AppCoordinator.swift */; };
+		E906724825449D8800DA97C1 /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906724725449D8800DA97C1 /* DashboardCoordinator.swift */; };
+		E906724F2544A49300DA97C1 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906724D2544A49300DA97C1 /* DashboardViewController.swift */; };
+		E90672502544A49300DA97C1 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E906724E2544A49300DA97C1 /* DashboardViewController.xib */; };
+		E90672542544A4D100DA97C1 /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672532544A4D100DA97C1 /* DashboardVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		E906722825447CCD00DA97C1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E906723025447CE600DA97C1 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		E906723A25447D2400DA97C1 /* CoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTest.swift; sourceTree = "<group>"; };
+		E906724025449D5200DA97C1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E906724725449D8800DA97C1 /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		E906724D2544A49300DA97C1 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		E906724E2544A49300DA97C1 /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		E90672532544A4D100DA97C1 /* DashboardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +95,8 @@
 		E90671EA2544779B00DA97C1 /* TMDB */ = {
 			isa = PBXGroup;
 			children = (
+				E906723E25449D3700DA97C1 /* Moduls */,
 				E906722725447CC300DA97C1 /* Coordinator */,
-				E90671EB2544779B00DA97C1 /* AppDelegate.swift */,
 				E90671EF2544779B00DA97C1 /* ViewController.swift */,
 				E90671F12544779B00DA97C1 /* Main.storyboard */,
 				E90671F72544779C00DA97C1 /* Assets.xcassets */,
@@ -114,6 +124,35 @@
 				E906723025447CE600DA97C1 /* BaseCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E906723E25449D3700DA97C1 /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				E906724625449D7000DA97C1 /* Dashboard */,
+				E906723F25449D3E00DA97C1 /* Application */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
+		E906723F25449D3E00DA97C1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E90671EB2544779B00DA97C1 /* AppDelegate.swift */,
+				E906724025449D5200DA97C1 /* AppCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E906724625449D7000DA97C1 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				E906724725449D8800DA97C1 /* DashboardCoordinator.swift */,
+				E906724D2544A49300DA97C1 /* DashboardViewController.swift */,
+				E906724E2544A49300DA97C1 /* DashboardViewController.xib */,
+				E90672532544A4D100DA97C1 /* DashboardVM.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +238,7 @@
 				E90671FB2544779C00DA97C1 /* LaunchScreen.storyboard in Resources */,
 				E90671F82544779C00DA97C1 /* Assets.xcassets in Resources */,
 				E90671F32544779B00DA97C1 /* Main.storyboard in Resources */,
+				E90672502544A49300DA97C1 /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,11 +256,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E906724125449D5200DA97C1 /* AppCoordinator.swift in Sources */,
 				E906723125447CE600DA97C1 /* BaseCoordinator.swift in Sources */,
 				E906722925447CCD00DA97C1 /* Coordinator.swift in Sources */,
 				E90671F62544779B00DA97C1 /* TMDB.xcdatamodeld in Sources */,
 				E90671F02544779B00DA97C1 /* ViewController.swift in Sources */,
 				E90671EC2544779B00DA97C1 /* AppDelegate.swift in Sources */,
+				E90672542544A4D100DA97C1 /* DashboardVM.swift in Sources */,
+				E906724825449D8800DA97C1 /* DashboardCoordinator.swift in Sources */,
+				E906724F2544A49300DA97C1 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
