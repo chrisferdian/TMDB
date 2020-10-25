@@ -22,6 +22,8 @@
 		E906724F2544A49300DA97C1 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906724D2544A49300DA97C1 /* DashboardViewController.swift */; };
 		E90672502544A49300DA97C1 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E906724E2544A49300DA97C1 /* DashboardViewController.xib */; };
 		E90672542544A4D100DA97C1 /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672532544A4D100DA97C1 /* DashboardVM.swift */; };
+		E90672592544A6C800DA97C1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672582544A6C800DA97C1 /* Request.swift */; };
+		E906726125453E3300DA97C1 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906726025453E3300DA97C1 /* Genres.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		E906724D2544A49300DA97C1 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		E906724E2544A49300DA97C1 /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
 		E90672532544A4D100DA97C1 /* DashboardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVM.swift; sourceTree = "<group>"; };
+		E90672582544A6C800DA97C1 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		E906726025453E3300DA97C1 /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 		E90671EA2544779B00DA97C1 /* TMDB */ = {
 			isa = PBXGroup;
 			children = (
+				E90672572544A6BE00DA97C1 /* Helpers */,
 				E906723E25449D3700DA97C1 /* Moduls */,
 				E906722725447CC300DA97C1 /* Coordinator */,
 				E90671EF2544779B00DA97C1 /* ViewController.swift */,
@@ -153,6 +158,31 @@
 				E90672532544A4D100DA97C1 /* DashboardVM.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		E90672572544A6BE00DA97C1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E906725E25453DF200DA97C1 /* Networking */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E906725E25453DF200DA97C1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E906725F25453DFB00DA97C1 /* Models */,
+				E90672582544A6C800DA97C1 /* Request.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E906725F25453DFB00DA97C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E906726025453E3300DA97C1 /* Genres.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +290,11 @@
 				E906723125447CE600DA97C1 /* BaseCoordinator.swift in Sources */,
 				E906722925447CCD00DA97C1 /* Coordinator.swift in Sources */,
 				E90671F62544779B00DA97C1 /* TMDB.xcdatamodeld in Sources */,
+				E906726125453E3300DA97C1 /* Genres.swift in Sources */,
 				E90671F02544779B00DA97C1 /* ViewController.swift in Sources */,
 				E90671EC2544779B00DA97C1 /* AppDelegate.swift in Sources */,
 				E90672542544A4D100DA97C1 /* DashboardVM.swift in Sources */,
+				E90672592544A6C800DA97C1 /* Request.swift in Sources */,
 				E906724825449D8800DA97C1 /* DashboardCoordinator.swift in Sources */,
 				E906724F2544A49300DA97C1 /* DashboardViewController.swift in Sources */,
 			);
