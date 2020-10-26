@@ -24,6 +24,20 @@
 		E90672542544A4D100DA97C1 /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672532544A4D100DA97C1 /* DashboardVM.swift */; };
 		E90672592544A6C800DA97C1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672582544A6C800DA97C1 /* Request.swift */; };
 		E906726125453E3300DA97C1 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906726025453E3300DA97C1 /* Genres.swift */; };
+		E9067266254544CB00DA97C1 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9067265254544CB00DA97C1 /* NSObject+Extensions.swift */; };
+		E906726C254544F500DA97C1 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906726B254544F500DA97C1 /* UITableView+Extensions.swift */; };
+		E90672712545452200DA97C1 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672702545452200DA97C1 /* EmptyStateView.swift */; };
+		E90672772545453C00DA97C1 /* EmptyStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E90672762545453C00DA97C1 /* EmptyStateView.xib */; };
+		E906727D2545456800DA97C1 /* RetryStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E906727C2545456800DA97C1 /* RetryStateView.xib */; };
+		E90672812545456F00DA97C1 /* RetryStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672802545456F00DA97C1 /* RetryStateView.swift */; };
+		E90672862545458A00DA97C1 /* LoadingStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672852545458A00DA97C1 /* LoadingStateView.swift */; };
+		E906728A2545459B00DA97C1 /* LoadingStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E90672892545459B00DA97C1 /* LoadingStateView.xib */; };
+		E90672902545BF8A00DA97C1 /* DashboardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906728E2545BF8900DA97C1 /* DashboardTVC.swift */; };
+		E90672912545BF8A00DA97C1 /* DashboardTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E906728F2545BF8A00DA97C1 /* DashboardTVC.xib */; };
+		E90672972545C71500DA97C1 /* DiscoverGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672962545C71500DA97C1 /* DiscoverGenres.swift */; };
+		E906729C2545C94C00DA97C1 /* DiscoverCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906729A2545C94C00DA97C1 /* DiscoverCVC.swift */; };
+		E906729D2545C94C00DA97C1 /* DiscoverCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E906729B2545C94C00DA97C1 /* DiscoverCVC.xib */; };
+		E90672A12545C99D00DA97C1 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672A02545C99D00DA97C1 /* UICollectionView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +72,20 @@
 		E90672532544A4D100DA97C1 /* DashboardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVM.swift; sourceTree = "<group>"; };
 		E90672582544A6C800DA97C1 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		E906726025453E3300DA97C1 /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
+		E9067265254544CB00DA97C1 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		E906726B254544F500DA97C1 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		E90672702545452200DA97C1 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		E90672762545453C00DA97C1 /* EmptyStateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateView.xib; sourceTree = "<group>"; };
+		E906727C2545456800DA97C1 /* RetryStateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RetryStateView.xib; sourceTree = "<group>"; };
+		E90672802545456F00DA97C1 /* RetryStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryStateView.swift; sourceTree = "<group>"; };
+		E90672852545458A00DA97C1 /* LoadingStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStateView.swift; sourceTree = "<group>"; };
+		E90672892545459B00DA97C1 /* LoadingStateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingStateView.xib; sourceTree = "<group>"; };
+		E906728E2545BF8900DA97C1 /* DashboardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTVC.swift; sourceTree = "<group>"; };
+		E906728F2545BF8A00DA97C1 /* DashboardTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTVC.xib; sourceTree = "<group>"; };
+		E90672962545C71500DA97C1 /* DiscoverGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverGenres.swift; sourceTree = "<group>"; };
+		E906729A2545C94C00DA97C1 /* DiscoverCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCVC.swift; sourceTree = "<group>"; };
+		E906729B2545C94C00DA97C1 /* DiscoverCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCVC.xib; sourceTree = "<group>"; };
+		E90672A02545C99D00DA97C1 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +127,7 @@
 		E90671EA2544779B00DA97C1 /* TMDB */ = {
 			isa = PBXGroup;
 			children = (
+				E90672642545446600DA97C1 /* Extensions */,
 				E90672572544A6BE00DA97C1 /* Helpers */,
 				E906723E25449D3700DA97C1 /* Moduls */,
 				E906722725447CC300DA97C1 /* Coordinator */,
@@ -152,6 +181,7 @@
 		E906724625449D7000DA97C1 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				E906728D2545BF6500DA97C1 /* Views */,
 				E906724725449D8800DA97C1 /* DashboardCoordinator.swift */,
 				E906724D2544A49300DA97C1 /* DashboardViewController.swift */,
 				E906724E2544A49300DA97C1 /* DashboardViewController.xib */,
@@ -163,6 +193,7 @@
 		E90672572544A6BE00DA97C1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E906726F2545451A00DA97C1 /* UI */,
 				E906725E25453DF200DA97C1 /* Networking */,
 			);
 			path = Helpers;
@@ -181,8 +212,67 @@
 			isa = PBXGroup;
 			children = (
 				E906726025453E3300DA97C1 /* Genres.swift */,
+				E90672962545C71500DA97C1 /* DiscoverGenres.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E90672642545446600DA97C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9067265254544CB00DA97C1 /* NSObject+Extensions.swift */,
+				E906726B254544F500DA97C1 /* UITableView+Extensions.swift */,
+				E90672A02545C99D00DA97C1 /* UICollectionView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E906726F2545451A00DA97C1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E90672842545458300DA97C1 /* LoadingStateView */,
+				E906727B2545455900DA97C1 /* RetryStateView */,
+				E906727A2545454800DA97C1 /* EmptyStateView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E906727A2545454800DA97C1 /* EmptyStateView */ = {
+			isa = PBXGroup;
+			children = (
+				E90672702545452200DA97C1 /* EmptyStateView.swift */,
+				E90672762545453C00DA97C1 /* EmptyStateView.xib */,
+			);
+			path = EmptyStateView;
+			sourceTree = "<group>";
+		};
+		E906727B2545455900DA97C1 /* RetryStateView */ = {
+			isa = PBXGroup;
+			children = (
+				E906727C2545456800DA97C1 /* RetryStateView.xib */,
+				E90672802545456F00DA97C1 /* RetryStateView.swift */,
+			);
+			path = RetryStateView;
+			sourceTree = "<group>";
+		};
+		E90672842545458300DA97C1 /* LoadingStateView */ = {
+			isa = PBXGroup;
+			children = (
+				E90672852545458A00DA97C1 /* LoadingStateView.swift */,
+				E90672892545459B00DA97C1 /* LoadingStateView.xib */,
+			);
+			path = LoadingStateView;
+			sourceTree = "<group>";
+		};
+		E906728D2545BF6500DA97C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E906728E2545BF8900DA97C1 /* DashboardTVC.swift */,
+				E906728F2545BF8A00DA97C1 /* DashboardTVC.xib */,
+				E906729A2545C94C00DA97C1 /* DiscoverCVC.swift */,
+				E906729B2545C94C00DA97C1 /* DiscoverCVC.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +355,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E906729D2545C94C00DA97C1 /* DiscoverCVC.xib in Resources */,
 				E90671FB2544779C00DA97C1 /* LaunchScreen.storyboard in Resources */,
+				E90672772545453C00DA97C1 /* EmptyStateView.xib in Resources */,
+				E906728A2545459B00DA97C1 /* LoadingStateView.xib in Resources */,
 				E90671F82544779C00DA97C1 /* Assets.xcassets in Resources */,
+				E906727D2545456800DA97C1 /* RetryStateView.xib in Resources */,
 				E90671F32544779B00DA97C1 /* Main.storyboard in Resources */,
+				E90672912545BF8A00DA97C1 /* DashboardTVC.xib in Resources */,
 				E90672502544A49300DA97C1 /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,13 +381,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90672902545BF8A00DA97C1 /* DashboardTVC.swift in Sources */,
 				E906724125449D5200DA97C1 /* AppCoordinator.swift in Sources */,
 				E906723125447CE600DA97C1 /* BaseCoordinator.swift in Sources */,
 				E906722925447CCD00DA97C1 /* Coordinator.swift in Sources */,
+				E906729C2545C94C00DA97C1 /* DiscoverCVC.swift in Sources */,
+				E90672972545C71500DA97C1 /* DiscoverGenres.swift in Sources */,
+				E90672812545456F00DA97C1 /* RetryStateView.swift in Sources */,
+				E9067266254544CB00DA97C1 /* NSObject+Extensions.swift in Sources */,
 				E90671F62544779B00DA97C1 /* TMDB.xcdatamodeld in Sources */,
 				E906726125453E3300DA97C1 /* Genres.swift in Sources */,
+				E90672712545452200DA97C1 /* EmptyStateView.swift in Sources */,
 				E90671F02544779B00DA97C1 /* ViewController.swift in Sources */,
+				E90672A12545C99D00DA97C1 /* UICollectionView+Extensions.swift in Sources */,
 				E90671EC2544779B00DA97C1 /* AppDelegate.swift in Sources */,
+				E906726C254544F500DA97C1 /* UITableView+Extensions.swift in Sources */,
+				E90672862545458A00DA97C1 /* LoadingStateView.swift in Sources */,
 				E90672542544A4D100DA97C1 /* DashboardVM.swift in Sources */,
 				E90672592544A6C800DA97C1 /* Request.swift in Sources */,
 				E906724825449D8800DA97C1 /* DashboardCoordinator.swift in Sources */,

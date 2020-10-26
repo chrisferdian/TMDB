@@ -28,9 +28,9 @@ internal struct Request<Value> where Value: Decodable {
         id: String? = nil,
         method: HTTPMethods = .get,
         body: Data? = nil,
+        urlParam: [String: String]? = nil,
         headers: Headers? = nil
     ) {
-        
         self.endPoint = url
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
@@ -54,7 +54,7 @@ internal struct Request<Value> where Value: Decodable {
     var wrappedValue: Response<Value> {
         get {
             return { completion in
-                
+                print(self.request.url!)
                 URLSession.shared
                     .dataTask(with: self.request) { data, _, error in
                         if error != nil {
@@ -74,13 +74,12 @@ internal struct Request<Value> where Value: Decodable {
     }
     
     mutating func setParameters(body: [String: String]) {
-        var requestBodyComponent = URLComponents()
-        var items:[URLQueryItem] = []
-        body.forEach { (key, value) in
-            items.append(URLQueryItem(name: key, value: value))
-        }
-        requestBodyComponent.queryItems = items
-        self.request.httpBody = requestBodyComponent.query?.data(using: .utf8)
+        var tempBody = body
+        tempBody["api_key"] = "a42b168856dcc7d96b4321bee09e82b3"
+        
+        var components = URLComponents(url: self.request.url!, resolvingAgainstBaseURL: false)
+        components?.setQueryItems(with: tempBody)
+        self.request.url = components?.url
     }
 }
 
