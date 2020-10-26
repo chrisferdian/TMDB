@@ -10,15 +10,11 @@ import Foundation
 class DashboardVM {
     @Request<ResponseGenres>(url: "/genre/movie/list")
     var genresRequest
-    @Request<DiscoverGenres>(url: "/discover/movie", urlParam: ["with_genres":"28"])
-    var discoverRequest
-
-    var didUpdateState: ((ListProcessingState, [Genre]?) -> Void)?
-    var discovers: [[DiscoverResult]] = []
     
-    init() {
-        
-    }
+    var didUpdateState: ((ListProcessingState, [Genre]?) -> Void)?
+    var didTapToDiscover: ((Genre) -> Void)?
+
+    init() {}
     
     func fetchGenres() {
         genresRequest { response in
@@ -28,22 +24,8 @@ class DashboardVM {
                 if result.genres.isEmpty {
                     self.didUpdateState?(.empty, result.genres)
                 } else {
-                    result.genres.forEach { (genre) in
-                        DispatchQueue.main.async {
-//                            self.discoverRequest { response in
-//                                switch response {
-//                                case .success(let movies):
-//                                    print(movies.results.count)
-//                                    self.discovers.append(movies.results)
-//                                case .failure(let error):
-//                                    print(error.localizedDescription)
-//                                }
-//                            }
-                            DispatchQueue.main.async {
-                                print(self.discovers.count)
-                                self.didUpdateState?(.success, result.genres)
-                            }
-                        }
+                    DispatchQueue.main.async {
+                        self.didUpdateState?(.success, result.genres)
                     }
                 }
             case .failure(let error):

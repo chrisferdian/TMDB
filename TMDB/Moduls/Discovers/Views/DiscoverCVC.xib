@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEi-mG-r7W">
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kpE-FZ-ns7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kpE-FZ-ns7">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                             </imageView>
                         </subviews>
@@ -41,6 +41,14 @@
                 <constraint firstItem="DEi-mG-r7W" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GCN-Lm-Wxo"/>
                 <constraint firstAttribute="trailing" secondItem="DEi-mG-r7W" secondAttribute="trailing" id="yeW-C1-0XF"/>
             </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imageViewCover" destination="kpE-FZ-ns7" id="U1H-fk-4MG"/>
+            </connections>
             <point key="canvasLocation" x="139" y="100"/>
         </collectionViewCell>
     </objects>

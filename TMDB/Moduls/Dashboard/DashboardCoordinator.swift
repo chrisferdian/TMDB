@@ -19,11 +19,23 @@ class DashboardCoordinator: BaseCoordinator {
         let viewModel = DashboardVM()
         
         viewController.viewModel = viewModel
-//        viewModel.didTapToDetail = { element in
-//            self.navigateToDetail(element: element)
-//        }
+        viewModel.didTapToDiscover = { genre in
+            self.presentDiscover(genre: genre)
+        }
         
         navigationController?.pushViewController(viewController, animated: true)
     }
     
+    func presentDiscover(genre: Genre) {
+        let coordinator = DiscoverCoordinator(navigationController: navigationController, and: genre)
+        
+        // store child coordinator
+        self.store(coordinator: coordinator)
+        coordinator.start()
+        
+        // detect when free it
+        coordinator.isCompleted = { [weak self] in
+            self?.free(coordinator: coordinator)
+        }
+    }
 }

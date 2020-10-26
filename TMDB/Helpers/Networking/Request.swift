@@ -54,7 +54,7 @@ internal struct Request<Value> where Value: Decodable {
     var wrappedValue: Response<Value> {
         get {
             return { completion in
-                print(self.request.url!)
+                print(request.url)
                 URLSession.shared
                     .dataTask(with: self.request) { data, _, error in
                         if error != nil {

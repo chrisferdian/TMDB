@@ -42,4 +42,24 @@ public extension UICollectionView {
                                                                  ofKind kind: String = UICollectionView.elementKindSectionHeader) -> T {
         return dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: type.className, for: indexPath) as! T
     }
+    internal func setStateView(with state: ListProcessingState, _ completion: (() -> Void)? = nil) {
+        DispatchQueue.main.async {
+            switch state {
+            case .success:
+                self.backgroundView = nil
+                return
+            case .empty:
+                guard let stateView = Bundle.main.loadNibNamed("EmptyStateView", owner: self, options: nil)?.first as? EmptyStateView else { return }
+                self.backgroundView = stateView
+            case .retry:
+                guard let stateView = Bundle.main.loadNibNamed("RetryStateView", owner: self, options: nil)?.first as? RetryStateView else { return }
+                self.backgroundView = stateView
+                stateView.onRetry = completion
+                return
+            default:
+                guard let stateView = Bundle.main.loadNibNamed("LoadingStateView", owner: self, options: nil)?.first as? LoadingStateView else { return }
+                self.backgroundView = stateView
+            }
+        }
+    }
 }

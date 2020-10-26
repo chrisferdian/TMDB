@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,6 +39,12 @@
 		E906729D2545C94C00DA97C1 /* DiscoverCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E906729B2545C94C00DA97C1 /* DiscoverCVC.xib */; };
 		E90672A12545C99D00DA97C1 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672A02545C99D00DA97C1 /* UICollectionView+Extensions.swift */; };
 		E90672A525466A8500DA97C1 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672A425466A8500DA97C1 /* UIImageView+Extensions.swift */; };
+		E90672B125466ED100DA97C1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E90672B025466ED100DA97C1 /* Kingfisher */; };
+		E90672B8254671FF00DA97C1 /* DiscoverVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672B7254671FF00DA97C1 /* DiscoverVM.swift */; };
+		E90672BE2546721600DA97C1 /* DiscoverCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672BD2546721600DA97C1 /* DiscoverCoordinator.swift */; };
+		E90672C22546728800DA97C1 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672C12546728700DA97C1 /* DiscoverViewController.swift */; };
+		E90672C625467A1E00DA97C1 /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E90672C525467A1E00DA97C1 /* DiscoverViewController.xib */; };
+		E90672CB254685FF00DA97C1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672CA254685FF00DA97C1 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +94,11 @@
 		E906729B2545C94C00DA97C1 /* DiscoverCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCVC.xib; sourceTree = "<group>"; };
 		E90672A02545C99D00DA97C1 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		E90672A425466A8500DA97C1 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		E90672B7254671FF00DA97C1 /* DiscoverVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVM.swift; sourceTree = "<group>"; };
+		E90672BD2546721600DA97C1 /* DiscoverCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCoordinator.swift; sourceTree = "<group>"; };
+		E90672C12546728700DA97C1 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		E90672C525467A1E00DA97C1 /* DiscoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
+		E90672CA254685FF00DA97C1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90672B125466ED100DA97C1 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +177,8 @@
 		E906723E25449D3700DA97C1 /* Moduls */ = {
 			isa = PBXGroup;
 			children = (
+				E90672CE25468FD800DA97C1 /* DetailMovie */,
+				E90672B6254671CD00DA97C1 /* Discovers */,
 				E906724625449D7000DA97C1 /* Dashboard */,
 				E906723F25449D3E00DA97C1 /* Application */,
 			);
@@ -226,6 +240,7 @@
 				E906726B254544F500DA97C1 /* UITableView+Extensions.swift */,
 				E90672A02545C99D00DA97C1 /* UICollectionView+Extensions.swift */,
 				E90672A425466A8500DA97C1 /* UIImageView+Extensions.swift */,
+				E90672CA254685FF00DA97C1 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -272,10 +287,36 @@
 			children = (
 				E906728E2545BF8900DA97C1 /* DashboardTVC.swift */,
 				E906728F2545BF8A00DA97C1 /* DashboardTVC.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E90672B6254671CD00DA97C1 /* Discovers */ = {
+			isa = PBXGroup;
+			children = (
+				E90672C9254685DF00DA97C1 /* Views */,
+				E90672B7254671FF00DA97C1 /* DiscoverVM.swift */,
+				E90672BD2546721600DA97C1 /* DiscoverCoordinator.swift */,
+				E90672C12546728700DA97C1 /* DiscoverViewController.swift */,
+				E90672C525467A1E00DA97C1 /* DiscoverViewController.xib */,
+			);
+			path = Discovers;
+			sourceTree = "<group>";
+		};
+		E90672C9254685DF00DA97C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				E906729A2545C94C00DA97C1 /* DiscoverCVC.swift */,
 				E906729B2545C94C00DA97C1 /* DiscoverCVC.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E90672CE25468FD800DA97C1 /* DetailMovie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailMovie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +335,9 @@
 			dependencies = (
 			);
 			name = TMDB;
+			packageProductDependencies = (
+				E90672B025466ED100DA97C1 /* Kingfisher */,
+			);
 			productName = TMDB;
 			productReference = E90671E82544779B00DA97C1 /* TMDB.app */;
 			productType = "com.apple.product-type.application";
@@ -343,6 +387,9 @@
 				Base,
 			);
 			mainGroup = E90671DF2544779B00DA97C1;
+			packageReferences = (
+				E90672AF25466ED100DA97C1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = E90671E92544779B00DA97C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -367,6 +414,7 @@
 				E90671F32544779B00DA97C1 /* Main.storyboard in Resources */,
 				E90672912545BF8A00DA97C1 /* DashboardTVC.xib in Resources */,
 				E90672502544A49300DA97C1 /* DashboardViewController.xib in Resources */,
+				E90672C625467A1E00DA97C1 /* DiscoverViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,11 +434,13 @@
 			files = (
 				E90672902545BF8A00DA97C1 /* DashboardTVC.swift in Sources */,
 				E906724125449D5200DA97C1 /* AppCoordinator.swift in Sources */,
+				E90672CB254685FF00DA97C1 /* UIView+Extensions.swift in Sources */,
 				E906723125447CE600DA97C1 /* BaseCoordinator.swift in Sources */,
 				E906722925447CCD00DA97C1 /* Coordinator.swift in Sources */,
 				E906729C2545C94C00DA97C1 /* DiscoverCVC.swift in Sources */,
 				E90672972545C71500DA97C1 /* DiscoverGenres.swift in Sources */,
 				E90672812545456F00DA97C1 /* RetryStateView.swift in Sources */,
+				E90672B8254671FF00DA97C1 /* DiscoverVM.swift in Sources */,
 				E9067266254544CB00DA97C1 /* NSObject+Extensions.swift in Sources */,
 				E90671F62544779B00DA97C1 /* TMDB.xcdatamodeld in Sources */,
 				E906726125453E3300DA97C1 /* Genres.swift in Sources */,
@@ -402,7 +452,9 @@
 				E90672A525466A8500DA97C1 /* UIImageView+Extensions.swift in Sources */,
 				E90672862545458A00DA97C1 /* LoadingStateView.swift in Sources */,
 				E90672542544A4D100DA97C1 /* DashboardVM.swift in Sources */,
+				E90672BE2546721600DA97C1 /* DiscoverCoordinator.swift in Sources */,
 				E90672592544A6C800DA97C1 /* Request.swift in Sources */,
+				E90672C22546728800DA97C1 /* DiscoverViewController.swift in Sources */,
 				E906724825449D8800DA97C1 /* DashboardCoordinator.swift in Sources */,
 				E906724F2544A49300DA97C1 /* DashboardViewController.swift in Sources */,
 			);
@@ -676,6 +728,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E90672AF25466ED100DA97C1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E90672B025466ED100DA97C1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E90672AF25466ED100DA97C1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E90671F42544779B00DA97C1 /* TMDB.xcdatamodeld */ = {
