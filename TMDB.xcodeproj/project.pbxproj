@@ -38,6 +38,7 @@
 		E906729C2545C94C00DA97C1 /* DiscoverCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906729A2545C94C00DA97C1 /* DiscoverCVC.swift */; };
 		E906729D2545C94C00DA97C1 /* DiscoverCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E906729B2545C94C00DA97C1 /* DiscoverCVC.xib */; };
 		E90672A12545C99D00DA97C1 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672A02545C99D00DA97C1 /* UICollectionView+Extensions.swift */; };
+		E90672A525466A8500DA97C1 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672A425466A8500DA97C1 /* UIImageView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		E906729A2545C94C00DA97C1 /* DiscoverCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCVC.swift; sourceTree = "<group>"; };
 		E906729B2545C94C00DA97C1 /* DiscoverCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCVC.xib; sourceTree = "<group>"; };
 		E90672A02545C99D00DA97C1 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		E90672A425466A8500DA97C1 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				E9067265254544CB00DA97C1 /* NSObject+Extensions.swift */,
 				E906726B254544F500DA97C1 /* UITableView+Extensions.swift */,
 				E90672A02545C99D00DA97C1 /* UICollectionView+Extensions.swift */,
+				E90672A425466A8500DA97C1 /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				E90672A12545C99D00DA97C1 /* UICollectionView+Extensions.swift in Sources */,
 				E90671EC2544779B00DA97C1 /* AppDelegate.swift in Sources */,
 				E906726C254544F500DA97C1 /* UITableView+Extensions.swift in Sources */,
+				E90672A525466A8500DA97C1 /* UIImageView+Extensions.swift in Sources */,
 				E90672862545458A00DA97C1 /* LoadingStateView.swift in Sources */,
 				E90672542544A4D100DA97C1 /* DashboardVM.swift in Sources */,
 				E90672592544A6C800DA97C1 /* Request.swift in Sources */,

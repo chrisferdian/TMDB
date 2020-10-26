@@ -19,7 +19,18 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEi-mG-r7W">
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kpE-FZ-ns7">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kpE-FZ-ns7" secondAttribute="bottom" id="4Ml-C5-bem"/>
+                            <constraint firstAttribute="trailing" secondItem="kpE-FZ-ns7" secondAttribute="trailing" id="TqR-JC-Dg0"/>
+                            <constraint firstItem="kpE-FZ-ns7" firstAttribute="leading" secondItem="DEi-mG-r7W" secondAttribute="leading" id="qMf-il-SIJ"/>
+                            <constraint firstItem="kpE-FZ-ns7" firstAttribute="top" secondItem="DEi-mG-r7W" secondAttribute="top" id="qO6-et-U6l"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>

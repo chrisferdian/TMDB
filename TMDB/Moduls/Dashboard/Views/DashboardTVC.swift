@@ -53,6 +53,7 @@ class DashboardTVC: UITableViewCell {
     private func setupCollectionView() {
         collectionView.register(cellType: DiscoverCVC.self)
         collectionView.dataSource = self
+        collectionView.delegate = self
     }
 }
 
@@ -67,5 +68,11 @@ extension DashboardTVC: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(with: DiscoverCVC.self, for: indexPath)
         cell.backgroundColor = .orange
         return cell
+    }
+}
+
+extension DashboardTVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 200, height: collectionView.frame.height)
     }
 }
