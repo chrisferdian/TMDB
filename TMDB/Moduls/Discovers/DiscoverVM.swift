@@ -12,6 +12,8 @@ class DiscoverVM {
     @Request<DiscoverGenres>(url: "/discover/movie", urlParam: ["with_genres":"28"])
     var discoverRequest
     var didUpdateState: ((ListProcessingState, [DiscoverResult]?) -> Void)?
+    var didTapToDetail: ((DiscoverResult) -> Void)?
+
     var genre: Genre?
     var page: Int = 1
     var totalPage = 0

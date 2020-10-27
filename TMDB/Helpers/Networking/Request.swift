@@ -54,7 +54,7 @@ internal struct Request<Value> where Value: Decodable {
     var wrappedValue: Response<Value> {
         get {
             return { completion in
-                print(request.url)
+                print("*****REQUEST TO : \(String(describing: self.request.url))")
                 URLSession.shared
                     .dataTask(with: self.request) { data, _, error in
                         if error != nil {
@@ -80,6 +80,10 @@ internal struct Request<Value> where Value: Decodable {
         var components = URLComponents(url: self.request.url!, resolvingAgainstBaseURL: false)
         components?.setQueryItems(with: tempBody)
         self.request.url = components?.url
+    }
+    
+    mutating func addUrlComponent(component: String) {
+        request.url?.appendPathComponent(component)
     }
 }
 

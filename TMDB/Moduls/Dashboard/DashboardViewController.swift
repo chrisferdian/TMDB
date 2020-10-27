@@ -23,6 +23,7 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
         self.setupTableView()
         self.bindViewModel()
+        title = "TMDB"
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             self.viewModel?.fetchGenres()
         }

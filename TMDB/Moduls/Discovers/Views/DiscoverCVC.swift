@@ -14,12 +14,11 @@ class DiscoverCVC: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-//        dropShadow(scale: false)
     }
     
     func bind(with discover: DiscoverResult) {
-        guard let url = URL(string: "https://image.tmdb.org/t/p/w500\(discover.backdropPath ?? "")") else { return }
+        guard let url = URL(string: "https://image.tmdb.org/t/p/w500\(discover.posterPath ?? "")") else { return }
+        
         imageViewCover.kf.setImage(with: url)
     }
 }

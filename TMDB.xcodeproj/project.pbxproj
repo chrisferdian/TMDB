@@ -45,6 +45,17 @@
 		E90672C22546728800DA97C1 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672C12546728700DA97C1 /* DiscoverViewController.swift */; };
 		E90672C625467A1E00DA97C1 /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E90672C525467A1E00DA97C1 /* DiscoverViewController.xib */; };
 		E90672CB254685FF00DA97C1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672CA254685FF00DA97C1 /* UIView+Extensions.swift */; };
+		E90672D32546919200DA97C1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672D12546919200DA97C1 /* DetailViewController.swift */; };
+		E90672D42546919200DA97C1 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E90672D22546919200DA97C1 /* DetailViewController.xib */; };
+		E90672D8254691A400DA97C1 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672D7254691A400DA97C1 /* DetailCoordinator.swift */; };
+		E90672DC2546928200DA97C1 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672DB2546928200DA97C1 /* DetailVM.swift */; };
+		E90672E32546A15300DA97C1 /* ResponseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672E22546A15300DA97C1 /* ResponseDetail.swift */; };
+		E90672E72546B8AE00DA97C1 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672E62546B8AE00DA97C1 /* Date+Extensions.swift */; };
+		E90672EB2546BB1C00DA97C1 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672EA2546BB1C00DA97C1 /* StopWatch.swift */; };
+		E90672EF2546C12C00DA97C1 /* ResponseTrailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672EE2546C12C00DA97C1 /* ResponseTrailer.swift */; };
+		E90672F32547424000DA97C1 /* ResponseReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672F22547424000DA97C1 /* ResponseReviews.swift */; };
+		E90672F925474D7300DA97C1 /* ReviewCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90672F725474D7300DA97C1 /* ReviewCVC.swift */; };
+		E90672FA25474D7300DA97C1 /* ReviewCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E90672F825474D7300DA97C1 /* ReviewCVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +110,17 @@
 		E90672C12546728700DA97C1 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		E90672C525467A1E00DA97C1 /* DiscoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
 		E90672CA254685FF00DA97C1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		E90672D12546919200DA97C1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E90672D22546919200DA97C1 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		E90672D7254691A400DA97C1 /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		E90672DB2546928200DA97C1 /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
+		E90672E22546A15300DA97C1 /* ResponseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDetail.swift; sourceTree = "<group>"; };
+		E90672E62546B8AE00DA97C1 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		E90672EA2546BB1C00DA97C1 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		E90672EE2546C12C00DA97C1 /* ResponseTrailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTrailer.swift; sourceTree = "<group>"; };
+		E90672F22547424000DA97C1 /* ResponseReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseReviews.swift; sourceTree = "<group>"; };
+		E90672F725474D7300DA97C1 /* ReviewCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCVC.swift; sourceTree = "<group>"; };
+		E90672F825474D7300DA97C1 /* ReviewCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +233,7 @@
 			children = (
 				E906726F2545451A00DA97C1 /* UI */,
 				E906725E25453DF200DA97C1 /* Networking */,
+				E90672EA2546BB1C00DA97C1 /* StopWatch.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -229,6 +252,9 @@
 			children = (
 				E906726025453E3300DA97C1 /* Genres.swift */,
 				E90672962545C71500DA97C1 /* DiscoverGenres.swift */,
+				E90672E22546A15300DA97C1 /* ResponseDetail.swift */,
+				E90672EE2546C12C00DA97C1 /* ResponseTrailer.swift */,
+				E90672F22547424000DA97C1 /* ResponseReviews.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -241,6 +267,7 @@
 				E90672A02545C99D00DA97C1 /* UICollectionView+Extensions.swift */,
 				E90672A425466A8500DA97C1 /* UIImageView+Extensions.swift */,
 				E90672CA254685FF00DA97C1 /* UIView+Extensions.swift */,
+				E90672E62546B8AE00DA97C1 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -315,8 +342,22 @@
 		E90672CE25468FD800DA97C1 /* DetailMovie */ = {
 			isa = PBXGroup;
 			children = (
+				E90672F625474D5800DA97C1 /* Views */,
+				E90672D12546919200DA97C1 /* DetailViewController.swift */,
+				E90672D22546919200DA97C1 /* DetailViewController.xib */,
+				E90672D7254691A400DA97C1 /* DetailCoordinator.swift */,
+				E90672DB2546928200DA97C1 /* DetailVM.swift */,
 			);
 			path = DetailMovie;
+			sourceTree = "<group>";
+		};
+		E90672F625474D5800DA97C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E90672F725474D7300DA97C1 /* ReviewCVC.swift */,
+				E90672F825474D7300DA97C1 /* ReviewCVC.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +450,8 @@
 				E90671FB2544779C00DA97C1 /* LaunchScreen.storyboard in Resources */,
 				E90672772545453C00DA97C1 /* EmptyStateView.xib in Resources */,
 				E906728A2545459B00DA97C1 /* LoadingStateView.xib in Resources */,
+				E90672FA25474D7300DA97C1 /* ReviewCVC.xib in Resources */,
+				E90672D42546919200DA97C1 /* DetailViewController.xib in Resources */,
 				E90671F82544779C00DA97C1 /* Assets.xcassets in Resources */,
 				E906727D2545456800DA97C1 /* RetryStateView.xib in Resources */,
 				E90671F32544779B00DA97C1 /* Main.storyboard in Resources */,
@@ -432,9 +475,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90672F925474D7300DA97C1 /* ReviewCVC.swift in Sources */,
 				E90672902545BF8A00DA97C1 /* DashboardTVC.swift in Sources */,
 				E906724125449D5200DA97C1 /* AppCoordinator.swift in Sources */,
 				E90672CB254685FF00DA97C1 /* UIView+Extensions.swift in Sources */,
+				E90672DC2546928200DA97C1 /* DetailVM.swift in Sources */,
+				E90672D8254691A400DA97C1 /* DetailCoordinator.swift in Sources */,
 				E906723125447CE600DA97C1 /* BaseCoordinator.swift in Sources */,
 				E906722925447CCD00DA97C1 /* Coordinator.swift in Sources */,
 				E906729C2545C94C00DA97C1 /* DiscoverCVC.swift in Sources */,
@@ -445,12 +491,18 @@
 				E90671F62544779B00DA97C1 /* TMDB.xcdatamodeld in Sources */,
 				E906726125453E3300DA97C1 /* Genres.swift in Sources */,
 				E90672712545452200DA97C1 /* EmptyStateView.swift in Sources */,
+				E90672D32546919200DA97C1 /* DetailViewController.swift in Sources */,
 				E90671F02544779B00DA97C1 /* ViewController.swift in Sources */,
 				E90672A12545C99D00DA97C1 /* UICollectionView+Extensions.swift in Sources */,
+				E90672EF2546C12C00DA97C1 /* ResponseTrailer.swift in Sources */,
 				E90671EC2544779B00DA97C1 /* AppDelegate.swift in Sources */,
 				E906726C254544F500DA97C1 /* UITableView+Extensions.swift in Sources */,
+				E90672E32546A15300DA97C1 /* ResponseDetail.swift in Sources */,
 				E90672A525466A8500DA97C1 /* UIImageView+Extensions.swift in Sources */,
 				E90672862545458A00DA97C1 /* LoadingStateView.swift in Sources */,
+				E90672F32547424000DA97C1 /* ResponseReviews.swift in Sources */,
+				E90672E72546B8AE00DA97C1 /* Date+Extensions.swift in Sources */,
+				E90672EB2546BB1C00DA97C1 /* StopWatch.swift in Sources */,
 				E90672542544A4D100DA97C1 /* DashboardVM.swift in Sources */,
 				E90672BE2546721600DA97C1 /* DiscoverCoordinator.swift in Sources */,
 				E90672592544A6C800DA97C1 /* Request.swift in Sources */,

@@ -75,5 +75,9 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
             viewModel?.fetchDiscovers()
          }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel?.didTapToDetail?(discovers[indexPath.row])
+    }
 }
 
